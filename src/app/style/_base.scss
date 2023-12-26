@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+
+    font-size: 62.5%; // 1rem = 10px | 10px / 16px = 62.5%
+}
+
+body {
+    font-family: 'Open Sans', -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+
+    color: var(--colors-primary);
+    background: var(--colors-white, #FFF);
+
+    padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.button_brightness {
+    @include makeButtonSmallClick
+}
