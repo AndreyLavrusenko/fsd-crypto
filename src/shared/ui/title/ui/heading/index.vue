@@ -2,7 +2,7 @@
     <h2 :class="$style.title"><slot /></h2>
 </template>
 
-<script setup >
+<script setup lang="ts">
 </script>
 
 <style scoped module>

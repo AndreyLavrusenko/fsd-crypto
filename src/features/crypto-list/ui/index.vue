@@ -3,14 +3,13 @@
     <CryptoItem :crypto="cryptoListStore.crypto" />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {CryptoItem} from '@/entities/crypto-item/ui/index.ts'
-import {Heading} from '@/shared/ui/title/ui/heading'
-import {cryptoListModel} from "@/features/crypto-list/model";
+import {Heading} from '@/shared/ui/title/ui/heading/index.ts'
+import {cryptoListModel} from "@/features/crypto-list/model/index.ts";
+
 
 const cryptoListStore = cryptoListModel()
-
-console.log(cryptoListStore.crypto)
 
 </script>
 

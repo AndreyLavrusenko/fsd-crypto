@@ -4,12 +4,12 @@
         <div :class="$style.content">
             <div :class="$style.item_left">
                 <div :class="$style.name">{{props.crypto.name}}</div>
-                <div :class="$style.count">{{props.crypto.quantity}}</div>
+                <div :class="$style.count">{{props.crypto.quantity}} {{props.crypto.ticker}}</div>
             </div>
 
             <div :class="$style.item_right">
                 <div :class="$style.price">{{props.crypto.price}}$</div>
-                <div :class="$style.percent">{{props.crypto.percentChange}}%</div>
+                <div :class="$style.percent">+{{props.crypto.percentChange}}%</div>
             </div>
         </div>
     </div>
@@ -17,10 +17,15 @@
 
 <script setup lang="ts">
 import {Crypto} from "@/shared/api/interface/crypto";
-import {PropType} from "vue";
+import {onMounted, PropType} from "vue";
+import {getAllMyCrypto} from "@/shared/api/request/getCrypto";
 
 const props = defineProps({
     crypto: Object as PropType<Crypto>,
+})
+
+onMounted(() => {
+    getAllMyCrypto()
 })
 
 console.log(props.crypto)
