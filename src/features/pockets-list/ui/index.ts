@@ -1,0 +1,1 @@
+export { default as PocketsList } from './index.vue'

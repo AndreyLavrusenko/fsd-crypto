@@ -1,0 +1,1 @@
+export { default as SquareCardPortfolio } from './index.vue'

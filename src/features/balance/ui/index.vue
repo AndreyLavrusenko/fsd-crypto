@@ -5,8 +5,8 @@
             <span :class="$style.balance__round">0xc8...320f</span>
         </div>
         <div :class="$style.balance__content">
-            <MajorTitle>$54,292.79</MajorTitle>
-            <div :class="$style.balance__percent">+5.21%</div>
+            <MajorTitle>${{formatCurrency(54292.79)}}</MajorTitle>
+            <Percent opacity="1" status="green" />
         </div>
         <div :class="$style.balance__buttons">
             <DefaultButton>
@@ -27,9 +27,11 @@
     </div>
 </template>
 
-<script setup>
-import {MajorTitle} from '@/shared/ui/title/ui/title'
-import {DefaultButton}  from '@/shared/ui/button/ui/default-button'
+<script setup lang="ts">
+import {MajorTitle} from '@/shared/ui/title/ui/title/index.ts'
+import {Percent} from "@/entities/percent/ui/index.ts";
+import {DefaultButton}  from '@/shared/ui/button/ui/default-button/index.ts'
+import {formatCurrency} from "@/shared/lib/utils/format/currency.ts";
 </script>
 
 <style scoped module>

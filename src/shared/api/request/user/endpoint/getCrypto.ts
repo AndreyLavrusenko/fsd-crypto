@@ -6,7 +6,7 @@ export const getAllMyCrypto = async (): Promise<Crypto[]> => {
     try {
 
         const response: AxiosResponse<Crypto[]> = await instance.get('/mock/crypto-list.json')
-        return response.data
+        return response.data;
 
     } catch (error: AxiosError) {
         if (error.response) {

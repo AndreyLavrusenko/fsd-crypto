@@ -7,7 +7,18 @@
     --colors-background-secondary: #F4F5F8;
     --colors-orange: #F19938;
     --colors-green: #32B153;
+    --colors-green-light: #32B1531A;
     --colors-red: #E34446;
+    --colors-red-light: #E344461A;
     --colors-light-blue: #007AFF;
-    --colors-white-blue: rgba(255, 255, 255, 0.88)
+    --colors-white-blue: rgba(255, 255, 255, 0.88);
+
+    --gradient-purpure-oraange: rgba(255, 157, 47, 1);
+    --gradient-blue-green: rgba(0, 238, 110, 1);
+    --gradient-blue-green-light: rgba(174, 251, 42, 1);
+    --gradient-orange-yellow: rgba(248, 108, 167, 1);
+    --gradient-purpure-blue: rgba(58, 127, 242, 1);
+    --gradient-purpure-peach: rgba(131, 56, 227, 1);
+
+    --shadow-m: 0px 8px 20px 0px rgba(43, 45, 51, 0.16);
 }
