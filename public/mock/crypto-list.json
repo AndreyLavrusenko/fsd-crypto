@@ -1,137 +1,38 @@
 [
   {
-    "id": 1,
-    "name": "Bitcoin",
-    "ticker": "BTC",
-    "price": 48000.25,
-    "percentChange": -2.5,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 5
-  },
-  {
     "id": 2,
     "name": "Ethereum",
     "ticker": "ETH",
-    "price": 3200.75,
+    "amount": 3226.75,
     "percentChange": 5.2,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 10
+    "image": "/img/eth.webp",
+    "quantity": 2.569032
   },
   {
     "id": 3,
-    "name": "Ripple",
-    "ticker": "XRP",
-    "price": 1.05,
-    "percentChange": -1.8,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 100
+    "name": "Dai",
+    "ticker": "DAI",
+    "amount": 3021.15,
+    "percentChange": 0.02,
+    "image": "/img/dai.webp",
+    "quantity": 3045.86
   },
   {
     "id": 4,
-    "name": "Litecoin",
-    "ticker": "LTC",
-    "price": 180.50,
-    "percentChange": 3.1,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 20
+    "name": "Avalanche",
+    "ticker": "AVAX",
+    "amount": 2440.09,
+    "percentChange": 1.54,
+    "image": "/img/avax.webp",
+    "quantity": 180.02
   },
   {
     "id": 5,
-    "name": "Cardano",
-    "ticker": "ADA",
-    "price": 1.85,
-    "percentChange": -0.5,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 50
-  },
-  {
-    "id": 6,
-    "name": "Polkadot",
-    "ticker": "DOT",
-    "price": 30.20,
-    "percentChange": 2.8,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 15
-  },
-  {
-    "id": 7,
-    "name": "Chainlink",
-    "ticker": "LINK",
-    "price": 25.60,
-    "percentChange": 1.2,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 30
-  },
-  {
-    "id": 8,
-    "name": "Stellar",
-    "ticker": "XLM",
-    "price": 0.50,
-    "percentChange": -0.9,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 200
-  },
-  {
-    "id": 9,
-    "name": "Bitcoin Cash",
-    "ticker": "BCH",
-    "price": 550.30,
-    "percentChange": -4.3,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 8
-  },
-  {
-    "id": 10,
-    "name": "Litecoin",
-    "ticker": "LTC",
-    "price": 180.50,
-    "percentChange": 3.1,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 25
-  },
-  {
-    "id": 11,
-    "name": "Dogecoin",
-    "ticker": "DOGE",
-    "price": 0.35,
-    "percentChange": 7.5,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 150
-  },
-  {
-    "id": 12,
-    "name": "VeChain",
-    "ticker": "VET",
-    "price": 0.15,
-    "percentChange": 0.8,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 500
-  },
-  {
-    "id": 13,
-    "name": "EOS",
-    "ticker": "EOS",
-    "price": 4.80,
-    "percentChange": -1.1,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 40
-  },
-  {
-    "id": 14,
-    "name": "Tron",
-    "ticker": "TRX",
-    "price": 0.10,
-    "percentChange": 2.0,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 1000
-  },
-  {
-    "id": 15,
-    "name": "Monero",
-    "ticker": "XMR",
-    "price": 150.70,
-    "percentChange": -0.2,
-    "image": "https://via.placeholder.com/150",
-    "quantity": 12
+    "name": "PancakeSwap",
+    "ticker": "CAKE",
+    "amount": 1573.63,
+    "percentChange": 0.43,
+    "image": "/img/cake.webp",
+    "quantity": 397.33
   }
 ]

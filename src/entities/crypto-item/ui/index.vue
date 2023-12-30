@@ -1,6 +1,6 @@
 <template>
     <div :class="$style.item_wrapper">
-        <img :class="$style.image" src="../../../shared/assets/images/eth.png" alt="">
+        <img :class="$style.image" :src="props.crypto.image" alt="">
         <div :class="$style.content">
             <div :class="$style.item_left">
                 <div :class="$style.name">{{props.crypto.name}}</div>
@@ -8,7 +8,7 @@
             </div>
 
             <div :class="$style.item_right">
-                <div :class="$style.price">{{props.crypto.price}}$</div>
+                <div :class="$style.price">{{formatCurrency(props.crypto.amount)}}$</div>
                 <div :class="$style.percent">+{{props.crypto.percentChange}}%</div>
             </div>
         </div>
@@ -17,18 +17,14 @@
 
 <script setup lang="ts">
 import {Crypto} from "@/shared/api/interface/crypto";
-import {onMounted, PropType} from "vue";
-import {getAllMyCrypto} from "@/shared/api/request/getCrypto";
+import {PropType} from "vue";
+import {formatCurrency} from "@/shared/lib/utils/format/currency";
 
 const props = defineProps({
     crypto: Object as PropType<Crypto>,
 })
 
-onMounted(() => {
-    getAllMyCrypto()
-})
 
-console.log(props.crypto)
 </script>
 
 <style scoped module>
@@ -92,5 +88,7 @@ console.log(props.crypto)
     font-weight: 400;
     line-height: 20px; /* 133.333% */
     letter-spacing: 0.44px;
+
+    text-align: right;
 }
 </style>

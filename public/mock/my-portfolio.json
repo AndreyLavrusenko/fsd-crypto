@@ -1,0 +1,23 @@
+[
+  {
+    "amount": 15642.40,
+    "description": "Savings for a future house",
+    "c": 2.5,
+    "icon": "🏠",
+    "color": "#3498db"
+  },
+  {
+    "amount": 28389.21,
+    "description": "Fund for a new car",
+    "percentChange": -1.8,
+    "icon": "🚗",
+    "color": "#e74c3c"
+  },
+  {
+    "amount": 4523.32,
+    "description": "Funds for an upcoming vacation",
+    "percentChange": 4.2,
+    "icon": "✈️",
+    "color": "#27ae60"
+  }
+]
