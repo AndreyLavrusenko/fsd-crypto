@@ -1,6 +1,6 @@
 <template>
-    <button :class="$style.page_button">
-        <template v-for="item in 3">
+    <button :class="$style.page_button" class="global-scale-animation">
+        <template v-for="item in props.count">
             <div :class="item === props.activeTab ? [$style.pin_active, $style.pin] : [$style.pin_default, $style.pin]"></div>
         </template>
     </button>
@@ -9,6 +9,7 @@
 <script setup lang="ts">
 const props = defineProps({
     activeTab: Number,
+    count: Number
 })
 </script>
 

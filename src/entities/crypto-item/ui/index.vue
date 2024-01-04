@@ -1,10 +1,12 @@
 <template>
-    <div :class="$style.item_wrapper">
+    <div :class="$style.item_wrapper" class="global-scale-animation">
         <img :class="$style.image" :src="props.crypto.image" alt="">
         <div :class="$style.content">
             <div :class="$style.item_left">
                 <div :class="$style.name">{{props.crypto.name}}</div>
-                <div :class="$style.count">{{props.crypto.quantity}} {{props.crypto.ticker}}</div>
+                <CommonText>
+                    {{props.crypto.quantity}} {{props.crypto.ticker}}
+                </CommonText>
             </div>
 
             <div :class="$style.item_right">
@@ -19,6 +21,7 @@
 import {Crypto} from "@/shared/api/interface/crypto";
 import {PropType} from "vue";
 import {formatCurrency} from "@/shared/lib/utils/format/currency";
+import {CommonText} from '@/shared/ui/text/ui/common/index.ts'
 
 const props = defineProps({
     crypto: Object as PropType<Crypto>,

@@ -1,2 +1,1 @@
-import CryptoItem from './index.vue'
-export {CryptoItem}
+export { default as CryptoItem } from '@/entities/crypto-item/ui/index.vue';

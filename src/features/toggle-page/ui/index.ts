@@ -1,2 +1,1 @@
-import HeaderToggle from './index.vue'
-export {HeaderToggle}
+export { default as HeaderToggle } from '@/features/toggle-page/ui/index.vue';

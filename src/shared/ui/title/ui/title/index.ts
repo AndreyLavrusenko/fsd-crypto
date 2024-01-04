@@ -1,2 +1,1 @@
-import MajorTitle from './index.vue'
-export {MajorTitle}
+export { default as MajorTitle } from '@/shared/ui/title/ui/title/index.vue';

@@ -4,7 +4,7 @@
             <img src="../../../shared/assets/images/Avatar.png" alt="">
         </div>
 
-        <PageButton :active-tab="2" />
+        <PageButton :count="routingStore.pageCount" :active-tab="activeTab" @click="togglePage" />
 
         <RoundButton>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,6 +20,28 @@
 <script setup lang="ts">
 import {RoundButton} from "@/shared/ui/button/ui/round-button/index.ts";
 import {PageButton} from "@/shared/ui/button/ui/page-button/index.ts";
+import {routingModel} from "@/features/toggle-page/model";
+import {onMounted, ref, watch} from "vue";
+import {useRoute, useRouter} from "vue-router";
+
+const route = useRoute()
+const router = useRouter()
+const routingStore = routingModel()
+
+const activeTab = ref(0)
+
+// Watch for changes in the route and update the currentPageName accordingly
+watch(() => route.name, (newPageName: string) => {
+    activeTab.value = routingStore.getCurrentPageId(newPageName) + 1
+});
+
+
+const togglePage = () => {
+    const name = routingStore.changePageByNext()
+    if (!name) return
+
+    router.push({name})
+}
 
 </script>
 

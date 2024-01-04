@@ -1,2 +1,1 @@
-import SquareCard from './index.vue'
-export {SquareCard}
+export { default as SquareCard } from '@/shared/ui/card/ui/square-card/index.vue';
