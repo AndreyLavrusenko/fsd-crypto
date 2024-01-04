@@ -48,6 +48,8 @@ const togglePage = () => {
 <style lang="scss" module>
 
 .header_wrapper {
+    padding: 20px 20px 0 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;

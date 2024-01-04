@@ -14,5 +14,7 @@ import {PocketsList} from '@/features/pockets-list/ui/index.ts'
 </script>
 
 <style scoped>
-
+    main {
+        padding: 20px;
+    }
 </style>

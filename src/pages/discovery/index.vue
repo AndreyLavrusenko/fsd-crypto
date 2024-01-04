@@ -9,5 +9,4 @@ import {Slider} from "@/widgets/slider/ui/index.ts";
 </script>
 
 <style scoped>
-
 </style>

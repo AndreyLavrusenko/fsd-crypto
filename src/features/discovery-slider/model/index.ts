@@ -1,0 +1,1 @@
+export {useSliderItems as sliderItemsModel} from './slider'
