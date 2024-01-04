@@ -1,5 +1,5 @@
 <template>
-    <button :class="$style.button">
+    <button :class="$style.button" class="global-lift-animation">
         <slot></slot>
     </button>
 </template>

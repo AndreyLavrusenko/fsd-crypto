@@ -1,2 +1,1 @@
-import Balance from './index.vue'
-export {Balance}
+export { default as Balance } from '@/features/balance/ui/index.vue';

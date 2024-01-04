@@ -1,2 +1,1 @@
-import DefaultButton from './index.vue'
-export {DefaultButton}
+export { default as DefaultButton } from '@/shared/ui/button/ui/default-button/index.vue';

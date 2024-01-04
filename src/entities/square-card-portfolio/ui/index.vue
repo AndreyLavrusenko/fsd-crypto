@@ -3,7 +3,9 @@
         <div :class="$style.wrapper">
             <div>
                 <h4 :class="$style.title">${{formatCurrency(props.pocket.amount)}}</h4>
-                <p :class="$style.description">{{props.pocket.description}}</p>
+                <SmallText>
+                    {{props.pocket.description}}
+                </SmallText>
             </div>
             <div :class="$style.wrapper_bottom">
                 <Percent opacity="0" status="green" />
@@ -21,6 +23,7 @@ import {Percent} from "@/entities/percent/ui/index.ts";
 import {PropType} from "vue";
 import {Pockets} from "@/shared/api/interface/portfolio";
 import {formatCurrency} from "@/shared/lib/utils/format/currency";
+import {SmallText} from "@/shared/ui/text/ui/small/index.ts"
 
 const props = defineProps({
     pocket: {

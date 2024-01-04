@@ -1,8 +1,9 @@
 import Routing from './index.vue';
-import Wallet from "@/pages/wallet/index.ts";
+
 
 export const routes = [
-    {path: '/', component: Wallet, name: 'Wallet'},
+    {path: '/', component: () => import("@/pages/home/index.ts"), name: 'Home'},
+    {path: '/discovery', component: () => import("@/pages/discovery/index"), name: 'Discovery'},
 ];
 
 export {Routing}

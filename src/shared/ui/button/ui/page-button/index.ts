@@ -1,2 +1,1 @@
-import PageButton from './index.vue'
-export {PageButton}
+export { default as PageButton } from '@/shared/ui/button/ui/page-button/index.vue';

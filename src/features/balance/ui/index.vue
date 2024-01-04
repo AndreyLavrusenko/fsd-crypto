@@ -1,8 +1,10 @@
 <template>
     <div :class="$style.balance__wrapper">
-        <div :class="$style.balance__header">
-            My Wallet
-            <span :class="$style.balance__round">0xc8...320f</span>
+        <div>
+            <CommonText>
+                My Wallet
+                <span :class="$style.balance__round">0xc8...320f</span>
+            </CommonText>
         </div>
         <div :class="$style.balance__content">
             <MajorTitle>${{formatCurrency(54292.79)}}</MajorTitle>
@@ -30,6 +32,7 @@
 <script setup lang="ts">
 import {MajorTitle} from '@/shared/ui/title/ui/title/index.ts'
 import {Percent} from "@/entities/percent/ui/index.ts";
+import {CommonText} from "@/shared/ui/text/ui/common/index.ts"
 import {DefaultButton}  from '@/shared/ui/button/ui/default-button/index.ts'
 import {formatCurrency} from "@/shared/lib/utils/format/currency.ts";
 </script>
@@ -38,17 +41,6 @@ import {formatCurrency} from "@/shared/lib/utils/format/currency.ts";
 .balance__wrapper {
     padding-top: 32px;
     padding-bottom: 16px;
-}
-
-.balance__header {
-    color: var(--colors-secondary, #9194A6);
-
-    /* Subhedline/Regular */
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 133.333% */
-    letter-spacing: 0.44px;
 }
 
 .balance__round {

@@ -6,6 +6,10 @@
             <template v-for="pocket in pocketsListStore.pockets">
                 <SquareCardPortfolio :pocket="pocket" />
             </template>
+
+            <SquareCardPlaceholderPocket />
+
+
         </div>
     </div>
 </template>
@@ -13,6 +17,7 @@
 <script setup lang="ts">
 import {Heading} from '@/shared/ui/title/ui/heading/index.ts'
 import {SquareCardPortfolio} from '@/entities/square-card-portfolio/ui/index.ts'
+import {SquareCardPlaceholderPocket} from "@/entities/sqaure-card-placeholder-pocket/ui/index.ts"
 import {pocketsListModel} from "@/features/pockets-list";
 import {onMounted} from "vue";
 

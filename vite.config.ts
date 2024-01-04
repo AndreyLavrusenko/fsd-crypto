@@ -7,6 +7,7 @@ import {fileURLToPath} from "url";
 export default defineConfig({
   plugins: [vue(), tsconfigPaths()],
   resolve: {
+    extensions: ['.js', '.ts', '.jsx', '.tsx', '.json'],
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }

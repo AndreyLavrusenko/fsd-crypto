@@ -1,13 +1,18 @@
 <template>
-    <div :class="$style.card" :style="{borderTop: `3px solid ${props.borderTop}`}">
-        <slot />
+    <div
+        tabindex="0"
+        :class="$style.card"
+        class="global-scale-animation"
+        :style="{borderTop: `3px solid ${props.borderTop}`}"
+    >
+        <slot/>
     </div>
 </template>
 
 <script setup lang="ts">
-    const props = defineProps({
-        borderTop: String
-    })
+const props = defineProps({
+    borderTop: String
+})
 </script>
 
 <style scoped module>

@@ -1,7 +1,9 @@
 <template>
-    <Balance />
-    <CryptoList />
-    <PocketsList />
+    <main>
+        <Balance />
+        <CryptoList />
+        <PocketsList />
+    </main>
 </template>
 
 <script setup lang="ts">

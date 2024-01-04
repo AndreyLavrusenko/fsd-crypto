@@ -1,5 +1,5 @@
 <template>
-    <button class="round-button button_brightness">
+    <button class="round-button">
         <slot />
     </button>
 </template>

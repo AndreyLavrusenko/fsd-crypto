@@ -1,1 +1,1 @@
-export { default as SquareCardPortfolio } from './index.vue'
+export { default as SquareCardPortfolio } from '@/entities/square-card-portfolio/ui/index.vue'

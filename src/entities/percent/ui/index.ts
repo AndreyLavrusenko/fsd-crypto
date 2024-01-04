@@ -1,1 +1,1 @@
-export {default as Percent} from './index.vue'
+export {default as Percent} from '@/entities/percent/ui/index.vue'
