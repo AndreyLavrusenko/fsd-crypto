@@ -4,7 +4,7 @@
             <div :class="$style.heading">
                 <Heading style="color: white; padding: 0 0 8px;">{{props.slide.strategy}}</Heading>
                 <CommonText style="color: white">{{props.slide.risk}}</CommonText>
-                <CommonText style="color: white">{{props.slide.participants_count}} participants</CommonText>
+                <CommonText style="color: white">{{formatCurrency(props.slide.participants_count)}} participants</CommonText>
             </div>
             <div :class="$style.footer">
                 <div>
@@ -26,12 +26,11 @@ import {CommonText} from "@/shared/ui/text/ui/common/index.ts";
 import {DefaultButton} from "@/shared/ui/button/ui/default-button/index.ts";
 import {PropType} from "vue";
 import {StrategySlide} from "@/shared/api/interface/strategy";
+import {formatCurrency} from "@/shared/lib/utils/format/currency.ts";
 
 const props = defineProps({
     slide: Object as PropType<StrategySlide>
 })
-
-console.log(props)
 
 </script>
 

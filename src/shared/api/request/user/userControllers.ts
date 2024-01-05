@@ -1,4 +1,9 @@
-import {getAllMyCrypto, getAllMyPockets, getAllStrategySlide} from "@/shared/api/request/user/endpoint";
+import {
+    getAllMyCrypto,
+    getAllMyPockets,
+    getAllStrategyCards,
+    getAllStrategySlide, getSortingCrypto
+} from "@/shared/api/request/user/endpoint";
 
 export class UserControllersAPI {
 
@@ -12,6 +17,14 @@ export class UserControllersAPI {
 
     static async getAllStrategySlide() {
         return await getAllStrategySlide()
+    }
+
+    static async getAllStrategyCards() {
+        return await getAllStrategyCards()
+    }
+
+    static async getSortingCrypto(sortBy: string) {
+        return await getSortingCrypto(sortBy)
     }
 
 }

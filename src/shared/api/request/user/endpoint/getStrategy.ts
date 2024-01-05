@@ -1,12 +1,12 @@
-import {Crypto} from "@/shared/api/interface/crypto";
+import {StrategyCard, StrategySlide} from "@/shared/api/interface/strategy";
 import {AxiosError, AxiosResponse} from "axios";
 import {instance} from "@/shared/api/config/instance";
 
-export const getAllMyCrypto = async (): Promise<Crypto[]> => {
+export const getAllStrategySlide = async (): Promise<StrategySlide[]> => {
     try {
 
-        const response: AxiosResponse<Crypto[]> = await instance.get('/mock/crypto-list.json')
-        return response.data;
+        const response: AxiosResponse<StrategySlide[]> = await instance.get('/mock/strategy-slide.json')
+        return response.data
 
     } catch (error: AxiosError) {
         if (error.response) {
@@ -26,11 +26,10 @@ export const getAllMyCrypto = async (): Promise<Crypto[]> => {
     }
 }
 
-
-export const getSortingCrypto = async (sortBy: string): Promise<Crypto[]> => {
+export const getAllStrategyCards = async (): Promise<StrategyCard[]> => {
     try {
 
-        const response: AxiosResponse<Crypto[]> = await instance.get(`/mock/${sortBy}-sort.json`)
+        const response: AxiosResponse<StrategyCard[]> = await instance.get('/mock/strategy-card.json')
         return response.data
 
     } catch (error: AxiosError) {

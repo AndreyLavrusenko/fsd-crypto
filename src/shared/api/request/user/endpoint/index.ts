@@ -1,3 +1,3 @@
 export * from './getCrypto'
 export * from './getPockets'
-export * from './getStrategySlide'
+export * from './getStrategy'

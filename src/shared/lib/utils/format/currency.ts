@@ -7,6 +7,6 @@ export const formatCurrency = (currency: number) => {
     // Format the first part with thousands separators
     const formattedAmount = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
-    // Combine the formatted first part with the second part
-    return  formattedAmount + "." + parts[1];
+    // Combine the formatted first part with the second part, if it exists
+    return parts.length > 1 ? formattedAmount + "." + parts[1] : formattedAmount;
 }

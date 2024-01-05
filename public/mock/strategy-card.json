@@ -1,0 +1,30 @@
+[
+  {
+    "title": "The Big Long",
+    "percentChange": 15.16,
+    "icon": "/img/strategy/long.webp",
+    "coinCount": 3,
+    "color": "#E0A9BB"
+  },
+  {
+    "title": "Aggressive Growth",
+    "percentChange": 159,
+    "icon": "/img/strategy/growth.webp",
+    "coinCount": 2,
+    "color": "#AEFB2A"
+  },
+  {
+    "title": "Best Project",
+    "percentChange": 46.22,
+    "icon": "/img/strategy/best.webp",
+    "coinCount": 12,
+    "color": "#F4D444"
+  },
+  {
+    "title": "Strategy 2022",
+    "percentChange": 26.08,
+    "icon": "/img/strategy/2022.webp",
+    "coinCount": 2,
+    "color": "#3A7FF2"
+  }
+]

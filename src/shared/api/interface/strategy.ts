@@ -5,3 +5,11 @@ export interface StrategySlide {
     profitability_per_year: number;
     background: string;
 }
+
+export interface StrategyCard {
+    title: string;
+    percentChange: number;
+    icon: string;
+    coinCount: number;
+    color: string;
+}
