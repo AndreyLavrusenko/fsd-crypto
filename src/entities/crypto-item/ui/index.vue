@@ -52,11 +52,18 @@ const props = defineProps({
 .image {
     width: 48px;
     height: 48px;
+
+    border-radius: 50%;
 }
 
 .item_left, .item_right {
     display: flex;
     flex-direction: column;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .name, .price {

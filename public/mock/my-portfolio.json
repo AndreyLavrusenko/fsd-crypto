@@ -2,7 +2,7 @@
   {
     "amount": 15642.40,
     "description": "Savings for a future house",
-    "c": 2.5,
+    "percentChange": 2.5,
     "icon": "🏠",
     "color": "#3498db"
   },

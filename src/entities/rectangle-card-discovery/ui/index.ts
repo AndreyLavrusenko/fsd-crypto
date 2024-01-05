@@ -1,0 +1,1 @@
+export { default as RectangleCardDiscovery } from '@/entities/rectangle-card-discovery/ui/index.vue'

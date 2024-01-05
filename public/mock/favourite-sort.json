@@ -1,0 +1,26 @@
+[
+  {
+    "id": 2,
+    "name": "Ethereum",
+    "ticker": "ETH",
+    "amount": 1259.10,
+    "percentChange": 1.15,
+    "image": "/img/eth.webp"
+  },
+  {
+    "id": 3,
+    "name": "Tether",
+    "ticker": "USDT",
+    "amount": 1.00,
+    "percentChange": 0.05,
+    "image": "/img/usdt.webp"
+  },
+  {
+    "id": 10,
+    "name": "Polygon",
+    "ticker": "MATIC",
+    "amount": 10.25,
+    "percentChange": 1.50,
+    "image": "/img/matic.webp"
+  }
+]

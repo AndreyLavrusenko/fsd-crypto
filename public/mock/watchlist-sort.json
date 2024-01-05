@@ -1,0 +1,42 @@
+[
+  {
+    "id": 2,
+    "name": "Ethereum",
+    "ticker": "ETH",
+    "amount": 1259.10,
+    "percentChange": 1.15,
+    "image": "/img/eth.webp"
+  },
+  {
+    "id": 4,
+    "name": "Avalanche",
+    "ticker": "AVAX",
+    "amount": 2440.09,
+    "percentChange": 1.54,
+    "image": "/img/avax.webp"
+  },
+  {
+    "id": 7,
+    "name": "Ripple",
+    "ticker": "XRP",
+    "amount": 0.75,
+    "percentChange": 1.20,
+    "image": "/img/xrp.webp"
+  },
+  {
+    "id": 9,
+    "name": "Cardano",
+    "ticker": "ADA",
+    "amount": 2.50,
+    "percentChange": 0.85,
+    "image": "/img/ada.webp"
+  },
+  {
+    "id": 10,
+    "name": "Polygon",
+    "ticker": "MATIC",
+    "amount": 10.25,
+    "percentChange": 1.50,
+    "image": "/img/matic.webp"
+  }
+]

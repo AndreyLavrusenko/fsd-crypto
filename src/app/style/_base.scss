@@ -22,9 +22,8 @@ body {
 
     color: var(--colors-primary);
     background: var(--colors-white, #FFF);
-
-    padding: 20px;
 }
+
 
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
@@ -32,4 +31,19 @@ h1,h2,h3,h4,h5,h6,p {
 
 button {
     border: none;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+    gap: 16px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 }

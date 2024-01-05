@@ -5,5 +5,5 @@ export interface Crypto {
     "amount": number,
     "percentChange": number,
     "image": string,
-    "quantity": number
+    "quantity"?: number
 }

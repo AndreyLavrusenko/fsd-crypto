@@ -7,7 +7,7 @@
 
 <style scoped module>
 .title {
-    padding: 12px 0;
+    padding: 12px 0 20px;
 
     color: var(--colors-primary, #2B2D33);
 

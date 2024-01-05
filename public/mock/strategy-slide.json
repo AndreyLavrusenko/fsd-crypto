@@ -1,0 +1,23 @@
+[
+  {
+    "strategy": "Stable Income",
+    "risk": "Low risk",
+    "participants_count": 2342,
+    "profitability_per_year": 15.7,
+    "background": "linear-gradient(80deg, #9A72EC -3.11%, #773DEE)"
+  },
+  {
+    "strategy": "Binance Index Strategy",
+    "risk": "Medium",
+    "participants_count": 264,
+    "profitability_per_year": 26.5,
+    "background": "linear-gradient(250deg, #FFC148 12.7%, #FF8239)"
+  },
+  {
+    "strategy": "All In",
+    "risk": "High",
+    "participants_count": 193,
+    "profitability_per_year": 93.1,
+    "background": "linear-gradient(90deg, #57EBDE 34.7%, #AEFB2A)"
+  }
+]
