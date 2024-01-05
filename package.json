@@ -10,6 +10,7 @@
   "dependencies": {
     "@vue/test-utils": "^2.4.3",
     "axios": "^1.6.2",
+    "crypto": "^1.0.1",
     "pinia": "^2.1.7",
     "sass": "^1.69.5",
     "start-server-and-test": "^2.0.3",

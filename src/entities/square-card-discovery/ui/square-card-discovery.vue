@@ -4,7 +4,7 @@
             <div :class="$style.top">
                 <h4 :class="$style.title">{{card.title}}</h4>
                 <div :class="$style.subtitle">
-                    <Percent opacity="0" status="green" />
+                    <Percent opacity="0" :data="props.card.percentChange" />
                     <SmallText>
                         per year
                     </SmallText>
@@ -24,8 +24,6 @@
 import {SquareCard} from '@/shared/ui/card/ui/square-card/index.ts'
 import {Percent} from "@/entities/percent/ui/index.ts";
 import {PropType} from "vue";
-import {Pockets} from "@/shared/api/interface/portfolio";
-import {formatCurrency} from "@/shared/lib/utils/format/currency";
 import {SmallText} from "@/shared/ui/text/ui/small/index.ts"
 import {StrategyCard} from "@/shared/api/interface/strategy";
 

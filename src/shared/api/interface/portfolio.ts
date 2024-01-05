@@ -1,7 +1,7 @@
 export interface Pockets {
     amount: number,
     description: string,
-    percentChange: string,
+    percentChange: number,
     icon: string,
     color: string
 }

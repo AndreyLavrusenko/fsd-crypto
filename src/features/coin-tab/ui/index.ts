@@ -1,1 +1,1 @@
-export { default as CoinTab } from '@/features/coin-tab/ui/index.vue';
+export { default as CoinTab } from '@/features/coin-tab/ui/coin-tab.vue';

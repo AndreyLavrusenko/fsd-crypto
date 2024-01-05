@@ -1,1 +1,1 @@
-export { default as Balance } from '@/widgets/balance/ui/index.vue';
+export { default as Balance } from '@/widgets/balance/ui/balance.vue';

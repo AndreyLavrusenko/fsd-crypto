@@ -1,2 +1,2 @@
-export * from './ui/index.vue'
+export * from './ui/pockets-list.vue'
 export * from './model'

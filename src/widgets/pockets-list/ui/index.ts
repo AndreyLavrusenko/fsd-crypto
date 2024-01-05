@@ -1,1 +1,1 @@
-export { default as PocketsList } from '@/widgets/pockets-list/ui/index.vue';
+export { default as PocketsList } from '@/widgets/pockets-list/ui/pockets-list.vue';

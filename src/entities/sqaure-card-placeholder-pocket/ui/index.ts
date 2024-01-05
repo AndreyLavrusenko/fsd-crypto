@@ -1,1 +1,1 @@
-export { default as SquareCardPlaceholderPocket } from '@/entities/sqaure-card-placeholder-pocket/ui/index.vue'
+export { default as SquareCardPlaceholderPocket } from '@/entities/sqaure-card-placeholder-pocket/ui/sqaure-card-placeholder-pocket.vue'

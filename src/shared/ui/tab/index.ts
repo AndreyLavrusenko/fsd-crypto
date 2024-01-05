@@ -1,1 +1,1 @@
-export { default as Tab } from '@/shared/ui/tab/index.vue';
+export { default as Tab } from '@/shared/ui/tab/tab.vue';

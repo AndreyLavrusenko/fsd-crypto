@@ -8,7 +8,7 @@
                 </SmallText>
             </div>
             <div :class="$style.wrapper_bottom">
-                <Percent opacity="0" status="green" />
+                <Percent opacity="0" :data="props.pocket.percentChange" />
                 <div :class="$style.icon">
                     {{props.pocket.icon}}
                 </div>

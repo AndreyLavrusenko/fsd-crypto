@@ -1,2 +1,2 @@
-export * from './title'
-export * from './heading'
+export * from './title/title.vue'
+export * from './heading/heading.vue'

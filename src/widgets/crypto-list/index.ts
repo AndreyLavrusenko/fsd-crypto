@@ -1,1 +1,1 @@
-export * from './ui/index.vue'
+export * from './ui/crypto-list.vue'

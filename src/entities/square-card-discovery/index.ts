@@ -1,1 +1,1 @@
-export * from './ui'
+export * from './ui/square-card-discovery.vue'

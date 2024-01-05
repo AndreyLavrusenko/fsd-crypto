@@ -1,1 +1,1 @@
-export * from './ui'
+export * from './ui/sqaure-card-placeholder-pocket.vue'

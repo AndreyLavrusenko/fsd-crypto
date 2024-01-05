@@ -8,7 +8,7 @@
         </div>
         <div :class="$style.balance__content">
             <MajorTitle>${{formatCurrency(54292.79)}}</MajorTitle>
-            <Percent opacity="1" status="green" />
+            <Percent opacity="1" :data="5.21" />
         </div>
         <div :class="$style.balance__buttons">
             <DefaultButton>
