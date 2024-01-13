@@ -1,0 +1,1 @@
+export { default as PopoverPurchase } from '@/entities/popover-purchase/ui/popover-purchase.vue'

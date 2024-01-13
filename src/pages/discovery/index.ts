@@ -1,2 +1,2 @@
-import Discovery from './index.vue'
+import Discovery from './discovery.vue'
 export default Discovery
