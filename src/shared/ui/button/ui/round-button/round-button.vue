@@ -22,6 +22,6 @@
     }
 
     .round-button:active {
-        transform: scale(.4);
+        transform: scale(.6);
     }
 </style>

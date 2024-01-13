@@ -4,9 +4,6 @@
     </p>
 </template>
 
-<script>
-</script>
-
 <style scoped module>
     .text {
         color: var(--colors-secondary, #9194A6);

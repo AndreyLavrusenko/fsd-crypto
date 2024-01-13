@@ -24,7 +24,6 @@ body {
     background: var(--colors-white, #FFF);
 }
 
-
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
 }
@@ -45,5 +44,10 @@ button {
 @media screen and (min-width: 768px) {
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+@media only screen and (max-width: 767px) {
+    body::-webkit-scrollbar {
+        width: 0;
     }
 }
