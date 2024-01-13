@@ -1,6 +1,6 @@
 <template>
     <div
-        :style="{backgroundColor: styleValues.background, color: styleValues.color}"
+        :style="{backgroundColor: styleValues.background, color: styleValues.color, padding: props.opacity === 'none' ? '' : '4px 8px'}"
         :class="$style.balance__percent"
     >
         {{
@@ -18,7 +18,7 @@ import {computed, PropType} from "vue";
 
 const props = defineProps({
     opacity: {
-        type: String as PropType<'1' | '0'>,
+        type: String as PropType<'1' | '0' | 'none'>,
         required: true
     },
     data: {
@@ -43,6 +43,13 @@ const styleValues = computed(() => {
         }
     }
 
+    if (props.data >= 0 && props.opacity === 'none') {
+        return {
+            background: 'inherit',
+            color: '#32B153'
+        }
+    }
+
     if (props.data < 0 && props.opacity === '0') {
         return {
             background: 'rgba(239,106,107,0.23)',
@@ -56,13 +63,22 @@ const styleValues = computed(() => {
             color: '#FFF'
         }
     }
+
+    if (props.data < 0 && props.opacity === 'none') {
+        return {
+            background: 'inherit',
+            color: '#E34446'
+        }
+    }
 })
 
 </script>
 
 <style scoped module>
 .balance__percent {
-    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
     color: var(--colors-white, #FFF);
 

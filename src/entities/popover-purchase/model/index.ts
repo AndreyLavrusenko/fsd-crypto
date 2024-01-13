@@ -1,0 +1,1 @@
+export {usePopoverPurchase as popoverPurchaseModel} from './popover-purchase'

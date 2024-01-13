@@ -17,5 +17,11 @@
 
         /* S */
         box-shadow: 0 6px 16px 0 rgba(43, 45, 51, 0.08);
+
+        transition: .4s;
+    }
+
+    .round-button:active {
+        transform: scale(.4);
     }
 </style>
