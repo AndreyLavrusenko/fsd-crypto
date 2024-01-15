@@ -1,7 +1,7 @@
 <template>
-    <Popover :active="popover.active" :close-popover="popover.togglePopover">
+    <Popover v-if="crypto" :active="popover.active" :close-popover="popover.togglePopover">
 
-        <div :class="$style.wrapper">
+        <div :class="$style.wrapper" :id="crypto.id">
             <div :class="$style.header">
                 <div :class="$style.back">
                     <RoundButton @click="popover.togglePopover(false)">
@@ -35,11 +35,18 @@
                 <div :class="$style.buy">
 
                     <div :class="$style.crypto">
-                        <img src="/public/img/dai.webp" alt="">
-                        <CommonText>DAI</CommonText>
+                        <img :src="crypto.image" alt="">
+                        <CommonText>{{crypto.name.toUpperCase()}}</CommonText>
                     </div>
 
-                    <input :class="$style.input" type="number" pattern="[0-9]*" placeholder="0.00">
+                    <input
+                        :class="$style.input"
+                        type="number"
+                        v-model="popover.amount"
+                        @input="popover.validateInput"
+                        pattern="[0-9]*"
+                        placeholder="0.00"
+                    >
 
                     <SmallText>
                         ⛽&nbsp;&nbsp;No gas, free investments
@@ -47,13 +54,13 @@
 
                 </div>
                 <div>
-                    <RoundButton style="font-size: 15px;">
+                    <RoundButton style="font-size: 15px;" @click="popover.setMax">
                         Max
                     </RoundButton>
                 </div>
             </div>
 
-            <DefaultButton>
+            <DefaultButton :disabled="Boolean(popover.amount)" @click="popover.buyCrypto(crypto)">
 
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -61,7 +68,7 @@
                         fill="white" fill-opacity="0.88"/>
                 </svg>
 
-                Hold to Invest
+                {{popover.buyLoading ? 'Purchase...' : 'Hold to Invest'}}
 
             </DefaultButton>
 
@@ -79,8 +86,13 @@ import MiniHeader from "@/shared/ui/title/ui/mini-header/mini-header.vue";
 import DefaultButton from "@/shared/ui/button/ui/default-button/default-button.vue";
 import {CommonText} from "@/shared/ui/text/ui/common";
 import SmallText from "@/shared/ui/text/ui/small/small-text.vue";
+import {computed, ref} from "vue";
+import {cryptoItemModel} from "@/entities/crypto-item/model";
 
 const popover = popoverPurchaseModel()
+const selectedCrypto = cryptoItemModel()
+
+const crypto = computed(() => selectedCrypto.selectedItem)
 
 </script>
 
@@ -137,6 +149,8 @@ const popover = popoverPurchaseModel()
 .crypto img {
     width: 24px;
     height: 24px;
+
+    border-radius: 50%;
 }
 
 .input {
