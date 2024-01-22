@@ -1,0 +1,1 @@
+export { default as PopoverSuccess } from '@/entities/popover-success/ui/popover-success.vue'

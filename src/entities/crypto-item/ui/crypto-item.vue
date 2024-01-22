@@ -2,7 +2,7 @@
     <div
         :class="$style.item_wrapper"
         class="global-scale-animation"
-        @click="popoverPurchaseStore.togglePopover(true)"
+        @click="selectCrypto"
     >
         <img :class="$style.image" :src="props.crypto.image" alt="">
         <div :class="$style.content">
@@ -29,14 +29,23 @@ import {CommonText} from '@/shared/ui/text/ui/common/index.ts'
 import Percent from "@/entities/percent/ui/percent.vue";
 import {popoverPurchaseModel} from "@/entities/popover-purchase/model";
 import MiniHeader from "@/shared/ui/title/ui/mini-header/mini-header.vue";
+import {cryptoItemModel} from "@/entities/crypto-item/model";
 
 const props = defineProps({
-    crypto: Object as PropType<Crypto>,
+    crypto: {
+        type: Object as PropType<Crypto>,
+        required: true
+    },
 })
 
 
 const popoverPurchaseStore = popoverPurchaseModel()
+const selectedCrypto = cryptoItemModel()
 
+const selectCrypto = () => {
+    popoverPurchaseStore.togglePopover(true)
+    selectedCrypto.selectItem(<Crypto>props.crypto)
+}
 
 </script>
 

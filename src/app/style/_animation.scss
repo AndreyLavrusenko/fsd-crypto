@@ -1,27 +1,13 @@
 .global-scale-animation {
     transition: transform 0.3s ease-in-out;
 
-    &:hover,
-    &:active {
+    &:not(:disabled):hover,
+    &:not(:disabled):active  {
         transform: scale(0.95);
     }
 
     &:not(:hover) {
         transform: scale(1);
-    }
-}
-
-
-.global-lift-animation {
-    transition: transform 0.2s ease-in-out;
-
-    &:active,
-    &:hover {
-        transform: translateY(-6px);
-    }
-
-    &:not(:hover) {
-        transform: translateY(0);
     }
 }
 

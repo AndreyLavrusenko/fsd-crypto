@@ -1,8 +1,17 @@
 <template>
-    <button :class="$style.button" class="global-lift-animation">
+    <button :disabled="!props.disabled" :class="$style.button" class="global-scale-animation">
         <slot></slot>
     </button>
 </template>
+
+<script lang="ts" setup>
+    const props = defineProps({
+        disabled: {
+            type: Boolean,
+            default: true
+        }
+    })
+</script>
 
 <style scoped module>
 .button  {
@@ -27,5 +36,9 @@
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.37px;
+}
+
+.button:disabled {
+    opacity: .8;
 }
 </style>
