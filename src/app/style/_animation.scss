@@ -1,8 +1,7 @@
 .global-scale-animation {
     transition: transform 0.3s ease-in-out;
 
-    &:not(:disabled):hover,
-    &:not(:disabled):active  {
+    &:not(:disabled):hover {
         transform: scale(0.95);
     }
 
