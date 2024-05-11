@@ -8,7 +8,7 @@ export const getAllStrategySlide = async (): Promise<StrategySlide[]> => {
         const response: AxiosResponse<StrategySlide[]> = await instance.get('/mock/strategy-slide.json')
         return response.data
 
-    } catch (error: AxiosError) {
+    } catch (error) {
         if (error.response) {
             // The request was made, but the server responded with a status code that falls out of the range of 2xx
             console.error('Server responded with error status:', error.response.status);
@@ -32,7 +32,7 @@ export const getAllStrategyCards = async (): Promise<StrategyCard[]> => {
         const response: AxiosResponse<StrategyCard[]> = await instance.get('/mock/strategy-card.json')
         return response.data
 
-    } catch (error: AxiosError) {
+    } catch (error) {
         if (error.response) {
             // The request was made, but the server responded with a status code that falls out of the range of 2xx
             console.error('Server responded with error status:', error.response.status);

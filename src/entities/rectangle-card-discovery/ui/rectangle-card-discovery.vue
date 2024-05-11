@@ -1,14 +1,14 @@
 <template>
-    <RectangleCard :linear-gradient="props.slide.background">
+    <RectangleCard :linear-gradient="props?.slide?.background">
         <div :class="$style.wrapper">
             <div :class="$style.heading">
-                <Heading style="color: white; padding: 0 0 8px;">{{props.slide.strategy}}</Heading>
-                <CommonText style="color: white">{{props.slide.risk}}</CommonText>
-                <CommonText style="color: white">{{formatCurrency(props.slide.participants_count)}} participants</CommonText>
+                <Heading style="color: white; padding: 0 0 8px;">{{props?.slide?.strategy}}</Heading>
+                <CommonText style="color: white">{{props?.slide?.risk}}</CommonText>
+                <CommonText style="color: white">{{formatCurrency(props?.slide?.participants_count)}} participants</CommonText>
             </div>
             <div :class="$style.footer">
                 <div>
-                    <Heading style="padding: 0; color: white;">{{props.slide.profitability_per_year}}%</Heading>
+                    <Heading style="padding: 0; color: white;">{{props?.slide?.profitability_per_year}}%</Heading>
                     <CommonText style="color: white">per year</CommonText>
                 </div>
                 <div>
