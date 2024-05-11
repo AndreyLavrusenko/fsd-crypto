@@ -1,7 +1,7 @@
 <template>
     <Popover v-if="crypto" :active="popover.active" :close-popover="popover.togglePopover">
 
-        <div :class="$style.wrapper" :id="crypto.id">
+        <div :class="$style.wrapper" :id="crypto.id.toString()">
             <div :class="$style.header">
                 <div :class="$style.back">
                     <RoundButton @click="popover.togglePopover(false)">

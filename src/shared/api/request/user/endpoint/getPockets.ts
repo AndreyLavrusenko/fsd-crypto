@@ -8,7 +8,7 @@ export const getAllMyPockets = async (): Promise<Pockets[]> => {
         const response: AxiosResponse<Pockets[]> = await instance.get('/mock/my-portfolio.json')
         return response.data
 
-    } catch (error: AxiosError) {
+    } catch (error) {
         if (error.response) {
             // The request was made, but the server responded with a status code that falls out of the range of 2xx
             console.error('Server responded with error status:', error.response.status);

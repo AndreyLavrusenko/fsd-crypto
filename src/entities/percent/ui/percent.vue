@@ -1,6 +1,6 @@
 <template>
     <div
-        :style="{backgroundColor: styleValues.background, color: styleValues.color, padding: props.opacity === 'none' ? '' : '4px 8px'}"
+        :style="{backgroundColor: styleValues?.background, color: styleValues?.color, padding: props.opacity === 'none' ? '' : '4px 8px'}"
         :class="$style.balance__percent"
     >
         {{

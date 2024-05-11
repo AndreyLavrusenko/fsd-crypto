@@ -14,6 +14,7 @@
 
         border-radius: 40px;
         background: var(--colors-white, #FFF);
+        color: var(--colors-primary);
 
         /* S */
         box-shadow: 0 6px 16px 0 rgba(43, 45, 51, 0.08);
